@@ -1,1 +1,1 @@
-# token-genetation
+# token-generation
