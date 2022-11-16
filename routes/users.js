@@ -45,7 +45,6 @@ router.post("/", async (req, res) => {
 
 //put user
 router.put("/:id", getUser, async (req, res) => {
-  const { id } = req.params;
   const { name, email } = req.body;
 
   if (name) {
