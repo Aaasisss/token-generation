@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
     const users = await User.find();
     res.status(200).send({
       status_code: "200",
-      Data: users,
+      data: users,
       message: "success",
     });
   } catch (err) {
@@ -20,7 +20,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", getUser, async (req, res) => {
   res.status(200).send({
     status_code: "200",
-    Data: res.user,
+    data: res.user,
     message: "success",
   });
 });
@@ -28,14 +28,15 @@ router.get("/:id", getUser, async (req, res) => {
 //post user
 router.post("/", async (req, res) => {
   const user = new User({
+    _id: req.body.user_id,
     name: req.body.name,
     email: req.body.email,
   });
   try {
-    const newUser = await user.save();
+    const new_user = await user.save();
     res.status(201).send({
       status_code: "201",
-      Data: newUser,
+      data: new_user,
       message: "Successfully added new user.",
     });
   } catch (err) {
@@ -58,7 +59,7 @@ router.put("/:id", getUser, async (req, res) => {
     const modifiedUser = await res.user.save();
     res.status(200).send({
       status_code: "200",
-      Data: modifiedUser,
+      data: modifiedUser,
       message: "Successfully updated user.",
     });
   } catch (error) {
@@ -72,7 +73,7 @@ router.delete("/:id", getUser, async (req, res) => {
     await res.user.remove();
     res.status(200).send({
       status_code: "200",
-      Data: res.user,
+      data: res.user,
       message: "Successfully deleted user.",
     });
   } catch (error) {
