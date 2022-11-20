@@ -18,7 +18,7 @@ Tokens are assigned to specific users, along with token expiry date(default 21 d
 http://localhost:3000/users/  
 http://localhost:3000/tokens/
 
-to get specific data, append id in the url
+to get specific data, append id to the url
 
 http://localhost:3000/users/637445f6175ba5c9b7672010  
 http://localhost:3000/tokens/637447e271923e559ccbf155
