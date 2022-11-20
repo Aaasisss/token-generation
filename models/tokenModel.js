@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const crypto = require("crypto");
 
 //initialize both dates
 const date = new Date();
@@ -13,10 +12,13 @@ const extendDay = 21;
 extendedDate.setDate(currentDate + extendDay);
 
 const tokenSchema = new mongoose.Schema({
+  token_name: {
+    type: String,
+    required: true,
+  },
   access_token: {
     type: String,
     required: true,
-    default: crypto.randomUUID,
   },
   create_date: {
     type: Date,
