@@ -41,5 +41,9 @@ app.use("/users", usersRouter);
 const tokensRouter = require("./routes/tokens");
 app.use("/tokens", tokensRouter);
 
+//get auth route
+const authRouter = require("./routes/auth");
+app.use("/auth", authRouter);
+
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
