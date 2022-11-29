@@ -32,14 +32,14 @@ to get specific data, append id in the url
 http://localhost:3000/users/637445f6175ba5c9b7672010  
 http://localhost:3000/tokens/637447e271923e559ccbf155
 
-| METHOD | ENDPOINT                                    | DESC  |
-| ------ | ------------------------------------------- | ----- |
-| GET    | http://localhost:3000/users/                | Title |
-|        | http://localhost:3000/tokens/               | Title |
-| POST   | http://localhost:3000/users/                | Title |
-|        | http://localhost:3000/tokens/               | Title |
-|        | http://localhost:3000/auth/token_validation | Title |
-| PUT    | http://localhost:3000/users/                | Title |
-|        | http://localhost:3000/tokens/               | Title |
-| DEL    | http://localhost:3000/users/                | Title |
-|        | http://localhost:3000/tokens/               | Title |
+| METHOD | ENDPOINT                                    | DESC                                                                                   |
+| ------ | ------------------------------------------- | -------------------------------------------------------------------------------------- |
+| GET    | http://localhost:3000/users/                | This method gives the list of users to get specific users, append user id to the url   |
+|        | http://localhost:3000/tokens/               | This method gives the list of tokens to get specific token, append token id to the url |
+| POST   | http://localhost:3000/users/                |                                                                                        |
+|        | http://localhost:3000/tokens/               |                                                                                        |
+|        | http://localhost:3000/auth/token_validation |                                                                                        |
+| PUT    | http://localhost:3000/users/                |                                                                                        |
+|        | http://localhost:3000/tokens/               |                                                                                        |
+| DEL    | http://localhost:3000/users/                |                                                                                        |
+|        | http://localhost:3000/tokens/               |                                                                                        |
