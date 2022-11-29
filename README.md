@@ -23,13 +23,9 @@ Tokens are assigned to specific users, along with token expiry date(default 21 d
 
 #### endpoints
 
-http://localhost:3000/users/637445f6175ba5c9b7672010  
-http://localhost:3000/tokens/637447e271923e559ccbf155
-
-#### endpoints
-
 http://localhost:3000/users/  
 http://localhost:3000/tokens/
+http://localhost:3000/auth/token_validation
 
 to get specific data, append id in the url
 
