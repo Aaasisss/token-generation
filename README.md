@@ -35,11 +35,9 @@ http://localhost:3000/tokens/637447e271923e559ccbf155
 | METHOD | ENDPOINT                                    | DESC  |
 | ------ | ------------------------------------------- | ----- |
 | GET    | http://localhost:3000/users/                | Title |
-|     | http://localhost:3000/tokens/                | Title |
-| POST    | http://localhost:3000/users/                | Title |
-  | http://localhost:3000/tokens/                | Title |
-  | http://localhost:3000/users/                | Title |
-| POST   | http://localhost:3000/auth/token_validation | Title |
-  
+|        | http://localhost:3000/tokens/               | Title |
+| POST   | http://localhost:3000/users/                | Title |
+|        | http://localhost:3000/tokens/               | Title |
+|        | http://localhost:3000/auth/token_validation | Title |
 | GET    | http://localhost:3000/users/                | Title |
 | GET    | http://localhost:3000/tokens/               | Title |
