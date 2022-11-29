@@ -39,5 +39,7 @@ http://localhost:3000/tokens/637447e271923e559ccbf155
 | POST   | http://localhost:3000/users/                | Title |
 |        | http://localhost:3000/tokens/               | Title |
 |        | http://localhost:3000/auth/token_validation | Title |
-| GET    | http://localhost:3000/users/                | Title |
-| GET    | http://localhost:3000/tokens/               | Title |
+| PUT    | http://localhost:3000/users/                | Title |
+|        | http://localhost:3000/tokens/               | Title |
+| DEL    | http://localhost:3000/users/                | Title |
+|        | http://localhost:3000/tokens/               | Title |
