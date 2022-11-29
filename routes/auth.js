@@ -11,9 +11,9 @@ router.post(
   compareToken,
   async (req, res) => {
     //comes from compareToken middlware
-    const allow_access = res.allow_access;
+    const is_token_valid = res.is_token_valid;
 
-    if (allow_access) {
+    if (is_token_valid) {
       res.status(200).send({ status: 200, message: "success" });
     } else {
       res.status(401).send({ status: 401, message: "auth failed" });
@@ -45,6 +45,8 @@ async function findTokensByUserId(req, res, next) {
   const user = res.user;
 
   try {
+    //returns an array of tokens
+    //if there are no tokens, it returns an empty array
     const tokens = await Token.find({ user_id: user._id });
 
     if (tokens.length > 0) {
@@ -69,7 +71,7 @@ async function compareToken(req, res, next) {
     const match = bcrypt.compareSync(token, access_token);
 
     if (match) {
-      res.allow_access = true;
+      res.is_token_valid = true;
     }
   });
 
